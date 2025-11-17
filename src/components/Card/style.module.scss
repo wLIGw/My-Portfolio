@@ -1,0 +1,91 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  background-color: var(--bgColor);
+  border-radius: 12px;
+  padding: 16px;
+  overflow: hidden;
+}
+
+.cardContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: center;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+      transition: transform 0.25s ease;
+
+}
+
+.cardImg {
+  width: 100%;
+  aspect-ratio: 16 / 9;   
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+
+.cardTitle {
+  color: var(--Title);
+
+  font-size: 20px;
+  font-family: "Bold";
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.cardDesc {
+  color: var(--textColor); 
+  font-size: 0.95rem;
+  margin-bottom: 12px;
+  text-align: center;
+  font-family: "Bold";
+}
+
+.techWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-bottom: 12px;
+  justify-content: center;
+}
+
+.viewButton {
+  padding: 8px 0;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.viewButton:hover {
+  transform: translateY(-2px);
+}
+
+.githubButton {
+  
+  padding: 8px 0;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  
+}
+.githubButton:hover {
+  transform: translateY(-2px);
+}
+
+
+.img{
+    width: 32px;
+    height: 32px;
+}
+
+.buttonWrapper{
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+

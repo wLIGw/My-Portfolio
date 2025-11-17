@@ -1,0 +1,75 @@
+.contactBox {
+  background: var(--BodyColor);
+  padding: 25px;
+  border-radius: 16px;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none; 
+
+  
+  .label {
+    color: var(--Title);
+    font-family: "Bold";
+    font-size: 17px;
+    transition: 0.2s ease;
+  }
+
+  &:hover .label {
+    color: var(--Name);
+    transform: translateX(3px);
+  }
+}
+
+.icon {
+  width: 52px;
+  height: 52px;
+  background-color: var(--Gray);
+
+  padding: 8px;
+  border-radius: 8px;
+  object-fit: contain;
+  flex-shrink: 0; // чтобы не сжималось
+
+  
+}
+
+/* ——— Адаптация ——— */
+@media (max-width: 991px) {
+  .label {
+    display: none;
+  }
+
+  .item {
+  }
+  
+  .contactBox{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  
+}
+
+@media (max-width: 400px) {
+  .icon{
+    width: 43px;
+    height: 43px;
+  }
+
+  }
+
+  @media (max-width: 340px) {
+  .icon{
+    width: 38px;
+    height: 38px;
+  }
+}

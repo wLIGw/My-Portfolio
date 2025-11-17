@@ -1,0 +1,37 @@
+.link{
+    color: var(--Title);
+
+    font-family: 'Bold';
+    font-size: 16px;
+    background-color: var(--bgColor);
+    padding: 8px 15px;
+    border-radius: 8px;
+    transition: all 0.2s ease-in-out;
+    
+    
+    &:hover{
+        color: var(--Gray);
+
+        background-color: var(--Plum);
+
+    }
+
+    @media (max-width: 1075px) {
+        font-size: 14px;
+    }
+    @media (max-width: 991px) {
+        font-size: 12px;
+    }
+}
+
+
+.active {
+        color: var(--Gray);
+
+        background-color: var(--Plum);
+
+}
+
+.link img{
+    display: block;
+}

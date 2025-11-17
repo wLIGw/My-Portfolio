@@ -1,0 +1,33 @@
+.section__contacts{
+    margin-bottom: 100px;
+}
+
+.contacts__right {
+width: 100%;  
+max-width: 600px;
+
+    @media (max-width: 1125px) {
+    max-width: 500px;
+    width: 100%;
+    }
+
+    @media (max-width: 991px) {
+    max-width: 100%
+    
+    }
+}
+
+
+
+.contacts{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    @media (max-width: 991px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

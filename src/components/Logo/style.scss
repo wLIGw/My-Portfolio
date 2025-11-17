@@ -1,0 +1,11 @@
+.logo{
+    color: var(--Plum);
+
+    font-family: 'Bold';
+    font-size: 30px;
+
+    @media (max-width: 1075px) {
+        font-size: 25px;
+    }
+    
+}

@@ -1,0 +1,58 @@
+[
+  {
+    "title": "TravelX",
+    "desc": "A modern travel website built with responsive design, interactive Swiper sliders for destinations, and automated build processes using Gulp.",
+    "tech": ["HTML", "SCSS", "JS", "GULP"],
+    "link": "https://wligw.github.io/Travel-X/",
+    "github": "https://github.com/wLIGw/Travel-X",
+    "img": "/img/projects/01.jpg"
+  },
+  {
+    "title": "LoftHouse",
+    "desc": "A modern LoftHouse website built with vanilla JavaScript, featuring responsive design, input masking with PhoneMask, and video popups using YouTubeLightbox.",
+    "tech": ["HTML", "SCSS", "JS"],
+    "link": "https://wligw.github.io/LoftHouse/",
+    "github": "https://github.com/wLIGw/LoftHouse",
+    "img": "/img/projects/02.jpg"
+  },
+  {
+    "title": "StarBucks",
+    "desc": "A simple, responsive website built with HTML and SCSS, using Flexbox and Grid for layout, absolute positioning, and smooth scrolling to sections via anchor links.",
+    "tech": ["HTML", "SCSS"],
+    "link": "https://wligw.github.io/Starbucks/",
+    "github": "https://github.com/wLIGw/Starbucks",
+    "img": "/img/projects/03.jpg"
+  },
+  {
+    "title": "AirBnB",
+    "desc": "A simplified AirBnB clone built with React, focusing on reusable components, structured UI, and clean code organization. The project demonstrates practical React skills, including props, component composition, and dynamic rendering. Not fully functional, but showcases a strong understanding of React fundamentals. The layout is optimized for desktop only and does not include full mobile adaptation.",
+    "tech": ["REACT", "SCSS", "VITE", "NODE JS"],
+    "link": "https://wligw.github.io/AirBnB/",
+    "github": "https://github.com/wLIGw/AirBnB",
+    "img": "/img/projects/04.png"
+  },
+  {
+    "title": "Burger Landing",
+    "desc": "A clean and responsive burger-themed landing page built using pure HTML and CSS. The project showcases strong fundamental skills, including semantic layout, modern styling techniques, Flexbox, Grid, and fully adaptive design. Created to demonstrate a solid understanding of core front-end principles without using any frameworks.",
+    "tech": ["HTML", "CSS"],
+    "link": "https://wligw.github.io/FastFood-Landing/",
+    "github": "https://github.com/wLIGw/FastFood-Landing",
+    "img": "/img/projects/05.jpg"
+  },
+  {
+  "title": "Velocity",
+    "desc": "A responsive landing page featuring a tab section with three buttons. Clicking each button updates the displayed content with smooth transitions, showcasing practical skills in DOM manipulation, event handling, and adaptive design using pure HTML, CSS, and JavaScript.",
+    "tech": ["HTML", "CSS", "JS"],
+    "link": "https://wligw.github.io/Velocity/",
+    "github": "https://github.com/wLIGw/Velocity",
+    "img": "/img/projects/06.jpg"
+  },
+  {
+  "title": "Tennis",
+    "desc": "A simple three-page landing site with hover effects. Built using pure HTML and CSS, the project demonstrates clean layout, visual interaction, and solid front-end structuring skills. No adaptive design included, focusing solely on static layout and interactivity on hover.",
+    "tech": ["HTML", "CSS"],
+    "link": "https://wligw.github.io/Tennis/",
+    "github": "https://github.com/wLIGw/Tennis",
+    "img": "/img/projects/07.jpg"
+  }
+]

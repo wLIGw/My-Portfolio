@@ -1,0 +1,71 @@
+@media (max-width: 910px) {
+  .mobileNav {
+    position: fixed;
+    inset: 0;              
+    z-index: 999;
+
+    opacity: 0;
+    pointer-events: none;  
+    transition: opacity 0.25s ease;
+  }
+
+  .mobileNav.open {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+
+  .mobileNav__overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 1000;
+  }
+
+
+  .mobileNav__panel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 260px;
+    height: 100%;
+    background: var(--bgColor);
+    padding: 60px 20px 20px;
+
+    z-index: 1001;
+
+    transform: translateX(-100%);    
+    transition: transform 0.35s ease; 
+  }
+
+  .mobileNav.open .mobileNav__panel {
+    transform: translateX(0);         
+  }
+
+  .mobileNav__close {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    font-size: 24px;
+    color: var(--Title);
+    cursor: pointer;
+  }
+
+  .mobileNav__list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
+  }
+  .mobileNav__list a {
+  font-size: 20px;     
+}
+}
+
+
+@media (min-width: 911px) {
+  .mobileNav {
+    display: none;
+  }
+}
+

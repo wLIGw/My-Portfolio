@@ -1,0 +1,44 @@
+.main {
+
+}
+
+.reveal,
+.reveal-left,
+.reveal-right {
+  opacity: 0;
+  transition: opacity 0.9s ease, transform 0.9s ease;
+}
+
+
+.reveal {
+  transform: translateY(40px);
+}
+
+
+.reveal-left {
+  transform: translateX(-60px);
+}
+
+
+.reveal-right {
+  transform: translateX(60px);
+}
+
+
+.reveal-show {
+  opacity: 1;
+}
+
+
+.reveal.reveal-show {
+  transform: translateY(0);
+}
+
+.reveal-left.reveal-show,
+.reveal-right.reveal-show {
+  transform: translateX(0);
+}
+
+
+
+
