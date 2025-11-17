@@ -12,17 +12,18 @@ const Skills = () => {
       {skillsData.map((skill, index) => {
         const ref = useReveal();
 
-        
         const row = Math.floor(index / 3);
         const directionClass = row % 2 === 0 ? "reveal-left" : "reveal-right";
 
-        
-        const iconSrc = skill.iconLight && skill.iconDark
-          ? theme === "light"
-            ? skill.iconLight
-            : skill.iconDark
-          : skill.icon;
+        const iconPath =
+          skill.iconLight && skill.iconDark
+            ? theme === "light"
+              ? skill.iconLight
+              : skill.iconDark
+            : skill.icon;
 
+        const iconSrc = import.meta.env.BASE_URL + iconPath;
+        
         return (
           <div
             key={index}
@@ -30,12 +31,7 @@ const Skills = () => {
             className={`skill ${directionClass}`}
           >
             <div className="skill-header">
-            <img
-              src={import.meta.env.BASE_URL + skill.icon + iconSrc}
-              alt={skill.name}
-              className="skill-icon"
-            />
-
+              <img src={iconSrc} alt={skill.name} className="skill-icon" />
               <span className="skill-name">{skill.name}</span>
             </div>
 
@@ -43,7 +39,7 @@ const Skills = () => {
               <div
                 className="skill-progress"
                 style={{ width: `${skill.level}%` }}
-              />
+              ></div>
             </div>
 
             <span className="skill-level">{skill.level}%</span>
@@ -55,5 +51,6 @@ const Skills = () => {
 };
 
 export default Skills;
+
 
 
