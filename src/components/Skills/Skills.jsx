@@ -31,7 +31,7 @@ const Skills = () => {
           >
             <div className="skill-header">
             <img
-              src={import.meta.env.BASE_URL + skill.icon}
+              src={import.meta.env.BASE_URL + skill.icon + iconSrc}
               alt={skill.name}
               className="skill-icon"
             />
