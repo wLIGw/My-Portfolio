@@ -1,12 +1,12 @@
 [
     {
-    "iconLight": "/.img/icons/code-black.svg",
+    "iconLight": "./img/icons/code-black.svg",
     "iconDark": "./img/icons/code.svg",
     "title": "Frontend Development",
     "desc": "Building fast, accessible, and responsive web interfaces with attention to structure and performance."
     },
     {
-    "iconLight": "/.img/icons/linux-black.svg",
+    "iconLight": "./img/icons/linux-black.svg",
     "iconDark": "./img/icons/linux.svg",
     "title": "System & Performance Optimization",
     "desc": "Experienced in configuring and maintaining Linux environments."
