@@ -9,7 +9,7 @@ import { ThemeContext, ThemeProvider } from './Context/ThemeContext.jsx'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <ThemeProvider>
-    <BrowserRouter basename="/Portfolio">
+    <BrowserRouter basename="/My-Portfolio">
       <App />
     </BrowserRouter>
     </ThemeProvider>
