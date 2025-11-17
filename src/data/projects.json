@@ -5,7 +5,7 @@
     "tech": ["HTML", "SCSS", "JS", "GULP"],
     "link": "https://wligw.github.io/Travel-X/",
     "github": "https://github.com/wLIGw/Travel-X",
-    "img": "./img/projects/01.jpg"
+    "img": "img/projects/01.jpg"
   },
   {
     "title": "LoftHouse",
@@ -13,7 +13,7 @@
     "tech": ["HTML", "SCSS", "JS"],
     "link": "https://wligw.github.io/LoftHouse/",
     "github": "https://github.com/wLIGw/LoftHouse",
-    "img": "./img/projects/02.jpg"
+    "img": "img/projects/02.jpg"
   },
   {
     "title": "StarBucks",
@@ -21,7 +21,7 @@
     "tech": ["HTML", "SCSS"],
     "link": "https://wligw.github.io/Starbucks/",
     "github": "https://github.com/wLIGw/Starbucks",
-    "img": "./img/projects/03.jpg"
+    "img": "img/projects/03.jpg"
   },
   {
     "title": "AirBnB",
@@ -29,7 +29,7 @@
     "tech": ["REACT", "SCSS", "VITE", "NODE JS"],
     "link": "https://wligw.github.io/AirBnB/",
     "github": "https://github.com/wLIGw/AirBnB",
-    "img": "./img/projects/04.png"
+    "img": "img/projects/04.png"
   },
   {
     "title": "Burger Landing",
@@ -37,7 +37,7 @@
     "tech": ["HTML", "CSS"],
     "link": "https://wligw.github.io/FastFood-Landing/",
     "github": "https://github.com/wLIGw/FastFood-Landing",
-    "img": "./img/projects/05.jpg"
+    "img": "img/projects/05.jpg"
   },
   {
   "title": "Velocity",
@@ -45,7 +45,7 @@
     "tech": ["HTML", "CSS", "JS"],
     "link": "https://wligw.github.io/Velocity/",
     "github": "https://github.com/wLIGw/Velocity",
-    "img": "./img/projects/06.jpg"
+    "img": "img/projects/06.jpg"
   },
   {
   "title": "Tennis",
@@ -53,6 +53,6 @@
     "tech": ["HTML", "CSS"],
     "link": "https://wligw.github.io/Tennis/",
     "github": "https://github.com/wLIGw/Tennis",
-    "img": "./img/projects/07.jpg"
+    "img": "img/projects/07.jpg"
   }
 ]

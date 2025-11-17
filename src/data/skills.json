@@ -1,60 +1,60 @@
 [
     {
-    "icon": "./img/icons/html-icon.svg",
+    "icon": "img/icons/html-icon.svg",
     "name": "HTML",
     "level": 95
     },
 
     {
-    "icon": "./img/icons/css-icon.svg",
+    "icon": "img/icons/css-icon.svg",
     "name": "CSS",
     "level": 95
     },
 
     {
-    "icon": "./img/icons/javascript-programming-language-icon.svg",
+    "icon": "img/icons/javascript-programming-language-icon.svg",
     "name": "JS",
     "level": 70
     },
 
     {
-    "icon": "./img/icons/react-js-icon.svg",
+    "icon": "img/icons/react-js-icon.svg",
     "name": "REACT",
     "level": 50
     },
 
     {
-    "icon": "./img/icons/tailwind-css-icon.svg",
+    "icon": "img/icons/tailwind-css-icon.svg",
     "name": "TAILWIND",
     "level": 40
     },
 
     {
-    "icon": "./img/icons/gulp-js-icon.svg",
+    "icon": "img/icons/gulp-js-icon.svg",
     "name": "GULP",
     "level": 80
     },
 
     {
-    "icon": "./img/icons/sass-icon.svg",
+    "icon": "img/icons/sass-icon.svg",
     "name": "SASS",
     "level": 95
     },
 
     {
-    "icon": "./img/icons/node-js-icon.svg",
+    "icon": "img/icons/node-js-icon.svg",
     "name": "NODE JS",
     "level": 90
     },
 
     {
-    "icon": "./img/icons/figma-icon.svg",
+    "icon": "img/icons/figma-icon.svg",
     "name": "FIGMA",
     "level": 80
     },
 
     {
-    "icon": "./img/icons/git-icon.svg",
+    "icon": "img/icons/git-icon.svg",
     "name": "GIT",
     "level": 80
     },
@@ -63,12 +63,12 @@
     
     "name": "GITHUB",
     "level": 80,
-    "iconDark": "./img/icons/github-white-icon.svg",
-    "iconLight": "./img/icons/github-icon.svg"
+    "iconDark": "img/icons/github-white-icon.svg",
+    "iconLight": "img/icons/github-icon.svg"
     },
 
     {
-    "icon": "./img/icons/vite-dev-icon.svg",
+    "icon": "img/icons/vite-dev-icon.svg",
     "name": "VITE",
     "level": 60
     }

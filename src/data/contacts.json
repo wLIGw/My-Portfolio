@@ -2,31 +2,31 @@
     {
     "type": "email",
     "label": "martinfrontend777@gmail.com",
-    "icon": "./img/icons/gmail-icon.svg",
+    "icon": "img/icons/gmail-icon.svg",
     "url": "mailto:martinfrontend777@gmail.com"
     },
     {
         "type": "telegram",
         "label": "Telegram",
-        "icon": "./img/icons/telegram-icon.svg",
+        "icon": "img/icons/telegram-icon.svg",
         "url": "https://t.me/MartinFrontend777"
     },
     {
     "type": "whatsapp",
     "label": "WhatsApp",
-    "icon": "./img/icons/whatsapp-color-icon.svg",
+    "icon": "img/icons/whatsapp-color-icon.svg",
     "url": "https://wa.me/306978204368"
     },
     {
     "type": "linkedin",
     "label": "LinkedIn",
-    "icon": "./img/icons/linkedin-app-icon.svg",
-    "url": "#!"
+    "icon": "img/icons/linkedin-app-icon.svg",
+    "url": "https://www.linkedin.com/in/martin-kashapov-1b3896391/"
     },
     {
     "type": "Github",
     "label": "Github",
-    "icon": "./img/icons/github-white-icon.svg",
+    "icon": "img/icons/github-white-icon.svg",
     "url": "https://github.com/wLIGw"
     }
     

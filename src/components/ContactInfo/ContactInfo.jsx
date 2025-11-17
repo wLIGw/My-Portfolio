@@ -16,7 +16,11 @@ const ContactInfo = () => {
           rel="noopener noreferrer"
           className={styles.item}
         >
-          <img className={styles.icon} src={item.icon} alt={item.type} />
+          <img
+            className={styles.icon}
+            src={import.meta.env.BASE_URL + item.icon}
+            alt={item.type}
+          />
           <span className={styles.label}>{item.label}</span>
         </a>
       ))}

@@ -11,7 +11,10 @@ const Introdactions = () => {
       {data.map((item, index) => (
         <div key={index} className="about-card">
           <img
-            src={theme === "light" ? item.iconLight : item.iconDark}
+            src={
+              import.meta.env.BASE_URL +
+              (theme === "light" ? item.iconLight : item.iconDark)
+            }
             alt={item.title}
             className="about-card__icon"
           />

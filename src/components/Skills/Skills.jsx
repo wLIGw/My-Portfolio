@@ -30,7 +30,12 @@ const Skills = () => {
             className={`skill ${directionClass}`}
           >
             <div className="skill-header">
-              <img src={iconSrc} alt={skill.name} className="skill-icon" />
+            <img
+              src={import.meta.env.BASE_URL + skill.icon}
+              alt={skill.name}
+              className="skill-icon"
+            />
+
               <span className="skill-name">{skill.name}</span>
             </div>
 

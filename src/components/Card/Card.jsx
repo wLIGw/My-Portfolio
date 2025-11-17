@@ -23,7 +23,12 @@ const Card = ({ project, index }) => {
       className={`${styles.card} reveal`}
       style={{ transitionDelay: `${index * 0.15}s` }}
     >
-      <img src={project.img} alt={project.title} className={styles.cardImg} />
+        <img 
+            src={import.meta.env.BASE_URL + project.img}
+            alt={project.title}
+            className={styles.cardImg}
+          />
+
 
       
       <div className={styles.cardContent}>
