@@ -54,5 +54,12 @@
     "link": "https://wligw.github.io/Tennis/",
     "github": "https://github.com/wLIGw/Tennis",
     "img": "img/projects/07.jpg"
+  },
+  {
+    "title": "Full-Stack E-Commerce Platform",
+    "desc": "A fully functional e-commerce website developed from scratch to meet real business requirements. This is a real commercial project where I was responsible for the entire process — from the initial idea and UI/UX design to full technical implementation, automation, and integrations.\n\nThe website is built on Creatium, but due to platform limitations, most of the core functionality was implemented using custom JavaScript, Make (Integromat), and a custom Google Sheets database. The system is designed to be scalable, automated, and easy to manage for non-technical users.\n\nI designed the entire website UI/UX from scratch, without templates: page structure, user flows, product cards, product gallery slider, animations, and interactive elements. All design and user experience decisions were created and implemented by me.\n\nKey features implemented:\n\n• Full product catalog with categories and subcategories\n• Custom product cards built from scratch\n• Product gallery slider\n• Favorites system, implemented via Make automation\n• Custom shopping cart with an extended checkout form (name, email, phone, delivery method, delivery address)\n• Minimum order amount — 3000 RUB\n• Dynamic discount system (from 10k / 50k / 100k RUB), implemented via custom JavaScript\n• Product quantity limits in cart (users cannot order more than available stock)\n• Advanced multi-word search (Creatium supports only single-word search — fully rewritten)\n• User registration and authentication\n• Automatic stock management: when a product is purchased, stock is updated in Google Sheets and instantly reflected on the website\n• Database with 150+ pages in Google Sheets using formulas and structured logic\n• Robokassa payment integration\n• Order notifications via custom Telegram bot (created from scratch)\n• Email notifications via Make\n• Custom cookie consent system\n• Pop-ups and system notifications\n• Full automation of orders and inventory management\n\nThis project is a real, production-ready e-commerce solution, actively used by a real business.",    "tech": ["GOOGLE SHEETS (DataBase)","MAKE","CREATIUM","HTML", "CSS","JS"],
+    "real": true,
+    "link": "https://suvenircrimea.ru/",
+    "img": "img/projects/08.png"
   }
 ]

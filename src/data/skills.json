@@ -70,6 +70,21 @@
     "icon": "img/icons/vite-dev-icon.svg",
     "name": "VITE",
     "level": 60
+    },
+    {
+    "icon": "img/icons/creatium.svg",
+    "name": "CREATIUM",
+    "level": 80
+    },
+    {
+    "icon": "img/icons/google-sheets.svg",
+    "name": "GOOGLE SHEETS (DataBase)",
+    "level": 60
+    },
+    {
+    "icon": "img/icons/make.svg",
+    "name": "MAKE",
+    "level": 40
     }
 
 ]

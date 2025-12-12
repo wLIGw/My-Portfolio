@@ -37,7 +37,7 @@
 
   font-size: 20px;
   font-family: "Bold";
-  margin-bottom: 8px;
+  margin-bottom: 25px;
   text-align: center;
 }
 
@@ -47,6 +47,11 @@
   margin-bottom: 12px;
   text-align: center;
   font-family: "Bold";
+
+  display: -webkit-box;
+  -webkit-line-clamp: 11;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .techWrapper {
@@ -61,6 +66,7 @@
   padding: 8px 0;
   border-radius: 6px;
   transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-left: auto;
 }
 .viewButton:hover {
   transform: translateY(-2px);
@@ -85,7 +91,104 @@
 
 .buttonWrapper{
     display: flex;
-  justify-content: space-between;
-  align-items: center;
+    align-items: center;
 }
 
+.learnMore {
+  margin-top: 6px;
+  background: none;
+  border: none;
+  color: var(--Title);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: "Bold";
+}
+
+.learnMore:hover {
+  transform: scale(1.1);
+}
+
+/* ===== MODAL ===== */
+
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  z-index: 999;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* 🔽 ДОБАВЛЕНО */
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.35s ease;
+}
+
+.modalOverlay.open {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal {
+  background-color: var(--bgColor);
+  color: var(--textColor);
+  padding: 24px;
+  border-radius: 12px;
+  max-width: 700px;
+  width: 90%;
+  max-height: 80vh;
+  overflow-y: auto;
+
+  /* 🔽 ДОБАВЛЕНО */
+  transform: translateY(20px) scale(0.95);
+  opacity: 0;
+  transition: all 0.35s ease;
+}
+
+.modalOverlay.open .modal {
+  transform: translateY(0) scale(1);
+  opacity: 1;
+}
+
+.modalTitle {
+  text-align: center;
+  color: var(--Title);
+  font-size: 20px;
+  font-family: "Bold";
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.modalTags {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.modalDesc {
+  line-height: 1.6;
+  color: var(--textColor); 
+  font-size: 0.95rem;
+  font-family: "Bold";
+}
+
+.closeBtn {
+  margin-top: 20px;
+  background-color: var(--Plum);
+  color: var(--Gray);
+  border: none;
+  padding: 8px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: "Bold";
+}
+
+.closeBtn:hover {
+  transform: scale(1.1);
+}

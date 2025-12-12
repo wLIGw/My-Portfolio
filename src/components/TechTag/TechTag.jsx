@@ -1,8 +1,11 @@
-import './style.scss'
+import './style.scss';
 
-
-const TechTag = ({ name }) => {
-    return <span className="techTag">{name}</span>;
+const TechTag = ({ name, type = "tech" }) => {
+  return (
+    <span className={`techTag ${type === "real" ? "techTag--real" : ""}`}>
+      {name}
+    </span>
+  );
 };
 
-export default TechTag
+export default TechTag;
