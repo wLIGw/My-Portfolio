@@ -4,43 +4,30 @@ import snowflake from "../../assets/snowflake.svg";
 
 const Snowfall = () => {
   const isMobile = window.innerWidth < 768;
-  const isLowEnd =
-    typeof navigator !== "undefined" &&
-    navigator.hardwareConcurrency &&
-    navigator.hardwareConcurrency <= 4;
-
-  // ❌ полностью отключаем снег на слабых мобильных устройствах
-  if (isMobile && isLowEnd) return null;
 
   const flakes = useMemo(() => {
     const rand = (min, max) => min + Math.random() * (max - min);
 
-    // 🎯 оптимальное количество
-    const COUNT = isMobile ? 14 : 35;
+    const COUNT = isMobile ? 22 : 36;
 
-    return Array.from({ length: COUNT }).map((_, i) => {
-      const size = isMobile ? rand(8, 14) : rand(14, 32);
+    return Array.from({ length: COUNT }).map((_, i) => ({
+      id: i,
 
-      return {
-        id: i,
+      left: rand(0, 100),
 
-        // ❄️ позиция
-        left: rand(0, 100),
-        startY: isMobile ? rand(-30, 100) : rand(-40, -10),
+      startY: rand(-80, -20),
 
-        // ❄️ размеры и скорость
-        size,
-        duration: isMobile ? rand(22, 34) : rand(8, 18),
-        delay: rand(0, 10),
+      size: isMobile ? rand(12, 20) : rand(14, 32),
+      opacity: isMobile ? rand(0.45, 0.75) : rand(0.4, 0.9),
 
-        // ❄️ движение
-        drift: isMobile ? 0 : rand(-30, 30),
-        rotate: isMobile ? 0 : rand(180, 720),
+      duration: isMobile ? rand(26, 40) : rand(10, 20),
 
-        // ❄️ прозрачность
-        opacity: rand(0.4, 0.9),
-      };
-    });
+      
+      delay: -rand(0, 40),
+
+      drift: isMobile ? 0 : rand(-30, 30),
+      rotate: isMobile ? 0 : rand(180, 720),
+    }));
   }, [isMobile]);
 
   return (
@@ -50,17 +37,20 @@ const Snowfall = () => {
           key={f.id}
           src={snowflake}
           alt=""
-          className="snowflake"
+          className={`snowflake ${isMobile ? "snowflake--mobile" : ""}`}
           style={{
             left: `${f.left}vw`,
-            top: `${f.startY}vh`,
             width: `${f.size}px`,
             height: `${f.size}px`,
             opacity: f.opacity,
-            animationDuration: `${f.duration}s`,
-            animationDelay: `${f.delay}s`,
+
+            
+            "--startY": `${f.startY}vh`,
             "--drift": `${f.drift}px`,
             "--rotate": `${f.rotate}deg`,
+
+            animationDuration: `${f.duration}s`,
+            animationDelay: `${f.delay}s`,
           }}
         />
       ))}
