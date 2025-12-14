@@ -1,0 +1,33 @@
+.snowfall {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.snowflake {
+  position: absolute;
+  top: -10vh;
+  animation-name: snow-fall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  will-change: transform;
+  filter: drop-shadow(0 0 6px rgba(47, 164, 255, 0.35));
+}
+
+@keyframes snow-fall {
+  0% {
+    transform: translate3d(0, 0, 0) rotate(0deg);
+  }
+  100% {
+    transform: translate3d(var(--drift), 120vh, 0)
+      rotate(var(--rotate));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .snowfall {
+    display: none;
+  }
+}
