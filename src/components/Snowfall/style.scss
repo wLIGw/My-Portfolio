@@ -1,7 +1,7 @@
 .snowfall {
   position: fixed;
   inset: 0;
-  z-index: 9999;
+  z-index: 500; // меньше, чем было
   pointer-events: none;
   overflow: hidden;
 }
@@ -12,20 +12,33 @@
   animation-name: snow-fall;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
+
+  /* 🔥 важно для GPU */
+  transform: translateZ(0);
   will-change: transform;
-  filter: drop-shadow(0 0 6px rgba(47, 164, 255, 0.35));
 }
 
 @keyframes snow-fall {
-  0% {
-    transform: translate3d(0, 0, 0) rotate(0deg);
-  }
-  100% {
+  to {
     transform: translate3d(var(--drift), 120vh, 0)
       rotate(var(--rotate));
   }
 }
 
+/* 📱 мобилка — максимально просто */
+@media (max-width: 768px) {
+  .snowflake {
+    animation-name: snow-fall-mobile;
+  }
+
+  @keyframes snow-fall-mobile {
+    to {
+      transform: translate3d(0, 120vh, 0);
+    }
+  }
+}
+
+/* ♿ уважение системных настроек */
 @media (prefers-reduced-motion: reduce) {
   .snowfall {
     display: none;

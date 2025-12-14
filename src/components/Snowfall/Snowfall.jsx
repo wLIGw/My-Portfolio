@@ -3,22 +3,32 @@ import "./style.scss";
 import snowflake from "../../assets/snowflake.svg";
 
 const Snowfall = () => {
+  const isMobile = window.innerWidth < 768;
+  const isLowEnd = navigator.hardwareConcurrency <= 4;
+
+  // ❌ полностью отключаем снег на слабых мобилках
+  if (isMobile && isLowEnd) return null;
+
   const flakes = useMemo(() => {
     const rand = (min, max) => min + Math.random() * (max - min);
 
-    const COUNT = window.innerWidth < 768 ? 20 : 45;
+    // 🔥 ЖЁСТКО меньше элементов на мобилке
+    const COUNT = isMobile ? 8 : 35;
 
     return Array.from({ length: COUNT }).map((_, i) => ({
       id: i,
       left: rand(0, 100),
-      size: rand(12, 32),
-      duration: rand(8, 18),
+      size: isMobile ? rand(10, 18) : rand(14, 32),
+      duration: isMobile ? rand(14, 24) : rand(8, 18),
       delay: rand(0, 10),
-      drift: rand(-30, 30),
-      rotate: rand(180, 720),
+
+      // ❌ убираем горизонтальный drift и вращение на мобилке
+      drift: isMobile ? 0 : rand(-30, 30),
+      rotate: isMobile ? 0 : rand(180, 720),
+
       opacity: rand(0.4, 0.9),
     }));
-  }, []);
+  }, [isMobile]);
 
   return (
     <div className="snowfall">
