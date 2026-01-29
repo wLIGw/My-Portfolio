@@ -1,0 +1,20 @@
+[
+    {
+    "iconLight": "img/icons/code-black.svg",
+    "iconDark": "img/icons/code.svg",
+    "title": "Frontend Development",
+    "desc": "Building fast, accessible, and responsive web interfaces with attention to structure and performance."
+    },
+    {
+    "iconLight": "img/icons/linux-black.svg",
+    "iconDark": "img/icons/linux.svg",
+    "title": "System & Performance Optimization",
+    "desc": "Experienced in configuring and maintaining Linux environments."
+    },
+    {
+    "iconLight": "img/icons/skillsup-black.svg",
+    "iconDark": "img/icons/skillsup.svg",
+    "title": "Continuous Learning & Problem Solving",
+    "desc": "Always exploring new tools and improving technical understanding."
+    }
+]

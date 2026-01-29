@@ -17,15 +17,15 @@ import Snowfall from "./components/Snowfall/Snowfall";
 
 function App() {
   return (
-    <>
-    <Snowfall />
-    <ScrollPadding />
+    <div className="app">
+      <Snowfall />
+      <ScrollPadding />
+
       <Header />
 
       <main className="page">
-          <ScrollToTop />
+        <ScrollToTop />
         <Routes>
-          
           <Route path="/" element={<Home />} />        
           <Route path="/about" element={<About />} />
           <Route path="/skills" element={<Skills />} />
@@ -37,8 +37,10 @@ function App() {
       <Footer />
 
       <ToastContainer position="bottom-right" autoClose={3000} theme="light" />
-    </>
+    </div>
   );
 }
 
 export default App;
+
+

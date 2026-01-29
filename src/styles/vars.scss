@@ -1,5 +1,6 @@
 :root {
     --font-family: 'Adwaita', sans-serif;
+    
 }
 
 body{
@@ -9,4 +10,18 @@ body{
 
 html, body {
     overflow-x: hidden;
+}
+
+#root {
+  height: 100%;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.page {
+  flex: 1; /* main-content занимает всё пространство между Header и Footer */
 }

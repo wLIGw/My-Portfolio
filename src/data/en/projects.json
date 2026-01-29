@@ -1,0 +1,74 @@
+[
+  {
+    "title": "TravelX",
+    "desc": "A modern travel website built with responsive design, interactive Swiper sliders for destinations, and automated build processes using Gulp.",
+    "tech": ["HTML", "SCSS", "JS", "GULP"],
+    "link": "https://wligw.github.io/Travel-X/",
+    "github": "https://github.com/wLIGw/Travel-X",
+    "img": "img/projects/01.jpg"
+  },
+  {
+    "title": "LoftHouse",
+    "desc": "A modern LoftHouse website built with vanilla JavaScript, featuring responsive design, input masking with PhoneMask, and video popups using YouTubeLightbox.",
+    "tech": ["HTML", "SCSS", "JS"],
+    "link": "https://wligw.github.io/LoftHouse/",
+    "github": "https://github.com/wLIGw/LoftHouse",
+    "img": "img/projects/02.jpg"
+  },
+  {
+    "title": "StarBucks",
+    "desc": "A simple, responsive website built with HTML and SCSS, using Flexbox and Grid for layout, absolute positioning, and smooth scrolling to sections via anchor links.",
+    "tech": ["HTML", "SCSS"],
+    "link": "https://wligw.github.io/Starbucks/",
+    "github": "https://github.com/wLIGw/Starbucks",
+    "img": "img/projects/03.jpg"
+  },
+  {
+    "title": "AirBnB",
+    "desc": "A simplified AirBnB clone built with React, focusing on reusable components, structured UI, and clean code organization. The project demonstrates practical React skills, including props, component composition, and dynamic rendering. Not fully functional, but showcases a strong understanding of React fundamentals. The layout is optimized for desktop only and does not include full mobile adaptation.",
+    "tech": ["REACT", "SCSS", "VITE", "NODE JS"],
+    "link": "https://wligw.github.io/AirBnB/",
+    "github": "https://github.com/wLIGw/AirBnB",
+    "img": "img/projects/04.png"
+  },
+  {
+    "title": "Burger Landing",
+    "desc": "A clean and responsive burger-themed landing page built using pure HTML and CSS. The project showcases strong fundamental skills, including semantic layout, modern styling techniques, Flexbox, Grid, and fully adaptive design. Created to demonstrate a solid understanding of core front-end principles without using any frameworks.",
+    "tech": ["HTML", "CSS"],
+    "link": "https://wligw.github.io/FastFood-Landing/",
+    "github": "https://github.com/wLIGw/FastFood-Landing",
+    "img": "img/projects/05.jpg"
+  },
+  {
+  "title": "Velocity",
+    "desc": "A responsive landing page featuring a tab section with three buttons. Clicking each button updates the displayed content with smooth transitions, showcasing practical skills in DOM manipulation, event handling, and adaptive design using pure HTML, CSS, and JavaScript.",
+    "tech": ["HTML", "CSS", "JS"],
+    "link": "https://wligw.github.io/Velocity/",
+    "github": "https://github.com/wLIGw/Velocity",
+    "img": "img/projects/06.jpg"
+  },
+  {
+  "title": "Tennis",
+    "desc": "A simple three-page landing site with hover effects. Built using pure HTML and CSS, the project demonstrates clean layout, visual interaction, and solid front-end structuring skills. No adaptive design included, focusing solely on static layout and interactivity on hover.",
+    "tech": ["HTML", "CSS"],
+    "link": "https://wligw.github.io/Tennis/",
+    "github": "https://github.com/wLIGw/Tennis",
+    "img": "img/projects/07.jpg"
+  },
+  {
+    "title": "Full-Stack E-Commerce Platform",
+    "desc": "A fully functional e-commerce website developed from scratch to meet real business requirements. This is a real commercial project where I was responsible for the entire process — from the initial idea and UI/UX design to full technical implementation, automation, and integrations.\n\nThe website is built on Creatium, but due to platform limitations, most of the core functionality was implemented using custom JavaScript, Make (Integromat), and a custom Google Sheets database. The system is designed to be scalable, automated, and easy to manage for non-technical users.\n\nI designed the entire website UI/UX from scratch, without templates: page structure, user flows, product cards, product gallery slider, animations, and interactive elements. All design and user experience decisions were created and implemented by me.\n\nKey features implemented:\n\n• Full product catalog with categories and subcategories\n• Custom product cards built from scratch\n• Product gallery slider\n• Favorites system, implemented via Make automation\n• Custom shopping cart with an extended checkout form (name, email, phone, delivery method, delivery address)\n• Minimum order amount — 3000 RUB\n• Dynamic discount system (from 10k / 50k / 100k RUB), implemented via custom JavaScript\n• Product quantity limits in cart (users cannot order more than available stock)\n• Advanced multi-word search (Creatium supports only single-word search — fully rewritten)\n• User registration and authentication\n• Automatic stock management: when a product is purchased, stock is updated in Google Sheets and instantly reflected on the website\n• Database with 150+ pages in Google Sheets using formulas and structured logic\n• Robokassa payment integration\n• Order notifications via custom Telegram bot (created from scratch)\n• Email notifications via Make\n• Custom cookie consent system\n• Pop-ups and system notifications\n• Full automation of orders and inventory management\n\nThis project is a real, production-ready e-commerce solution, actively used by a real business.",    
+    "tech": ["GOOGLE SHEETS (DataBase)","MAKE","CREATIUM","HTML", "CSS","JS"],
+    "real": true,
+    "link": "https://suvenircrimea.ru/",
+    "img": "img/projects/08.png"
+  },
+  {
+    "title": "Business landing",
+  "desc": "A high-performance business landing page developed from scratch for a single service-based company. During the development process, a scalable architecture was intentionally designed, allowing the company to expand the website and create new service-specific landing pages based on a single core solution (one template → dozens of targeted landing pages).\n\nThe website is built using pure HTML, CSS, and JavaScript without heavy frameworks. The architecture allows fast duplication and adaptation of pages for new service directions while maintaining a consistent visual style, high loading speed, and strong SEO optimization.\n\nThe entire layout and structure were custom-built without templates. The website is fully responsive and adapted for all devices, using modern CSS Grid and Flexbox techniques.\n\nKey features and optimizations implemented:\n\n• Fully custom layout without templates\n• Responsive layout using CSS Grid and Flexbox\n• Full adaptation for desktop, tablet, and mobile devices\n• Ultra performance optimization (Google PageSpeed: 100 / 95 — Desktop / Mobile)\n• Image optimization\n• Font optimization\n• Minimized and optimized JavaScript and CSS\n• Scalable structure for rapid expansion with new company services\n\nImplemented JavaScript functionality:\n\n• Responsive services slider using Swiper.js with custom breakpoints\n• Modal windows and galleries using Fancybox\n• Lazy-loaded Yandex Map implemented via IntersectionObserver\n• Interactive FAQ accordion with dynamic content height control\n• Floating Telegram button with advanced scroll-based behavior:\n  - appears after a defined scroll position\n  - automatically shifts when approaching the footer\n  - attaches to the contacts section on mobile devices\n• Complete UI behavior logic based on scroll position and viewport size\n\nThis project is built for a real business, focusing on high conversion rates, maximum performance, and convenient long-term scalability without rewriting existing code.",
+    "tech": ["HTML", "CSS","JS"],
+    "real": true,
+    "link": "https://wligw.github.io/Business-landing/",
+    "img": "img/projects/09.png"
+  }
+]

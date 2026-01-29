@@ -1,0 +1,24 @@
+.language-switcher {
+  background-color: var(--bgColor);
+  color: var(--Title);
+  padding: 8px 15px;
+  border-radius: 8px;
+  transition: all 0.2s ease-in-out;
+  font-family: "Bold";
+  font-size: 16px;
+
+  &:hover {
+   background-color: var(--Plum);
+   color: var(--Gray);
+  }
+
+   @media (max-width: 1075px) {
+        font-size: 14px;
+    }
+    @media (max-width: 991px) {
+        font-size: 12px;
+    }
+    @media (max-width: 910px) {
+       font-size: 14px;
+}
+}

@@ -1,10 +1,15 @@
 import React, { useContext } from "react";
-import './style.scss';
-import data from "../../data/Introdactions.json";
+import "./style.scss";
+import enData from "../../data/en/Introdactions.json";
+import ruData from "../../data/ru/Introdactions.json";
 import { ThemeContext } from "../../Context/ThemeContext";
+import { useTranslation } from "react-i18next";
 
 const Introdactions = () => {
   const { theme } = useContext(ThemeContext);
+  const { i18n } = useTranslation();
+
+  const data = i18n.language.startsWith("ru") ? ruData : enData;
 
   return (
     <div className={`about-right ${theme === "light" ? "light-icons" : ""}`}>

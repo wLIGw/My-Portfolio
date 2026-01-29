@@ -1,7 +1,8 @@
-import React from "react";
-import projects from "../../data/projects.json";
+import { useTranslation } from "react-i18next";
+import enProjects from "../../data/en/projects.json";
+import ruProjects from "../../data/ru/projects.json";
 import Card from "../Card/Card";
-import './style.scss';
+import "./style.scss";
 
 const techWeights = {
   "HTML": 1,
@@ -14,9 +15,14 @@ const techWeights = {
   "NODE JS": 7
 };
 
-const REAL_PROJECT_BONUS = 1000; // << главное значение
+const REAL_PROJECT_BONUS = 1000;
 
 const ProjectsList = () => {
+  const { i18n } = useTranslation();
+
+  const projects = i18n.language.startsWith("ru")
+    ? ruProjects
+    : enProjects;
 
   const sortedProjects = [...projects].sort((a, b) => {
     const techScoreA = Math.max(...(a.tech || []).map(t => techWeights[t] || 0));

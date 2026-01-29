@@ -1,3 +1,8 @@
+@media (min-width: 911px) {
+  .mobileNav {
+    display: none;
+  }
+}
 @media (max-width: 910px) {
   .mobileNav {
     position: fixed;
@@ -63,9 +68,5 @@
 }
 
 
-@media (min-width: 911px) {
-  .mobileNav {
-    display: none;
-  }
-}
+
 
