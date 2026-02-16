@@ -13,14 +13,11 @@ import Projects from "./pages/ProjectsPage";
 import Contacts from "./pages/ContactsPage";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 import ScrollPadding from "./components/ScrollPadding/ScrollPadding";
-import Snowfall from "./components/Snowfall/Snowfall";
 
 function App() {
   return (
     <div className="app">
-      <Snowfall />
-      <ScrollPadding />
-
+      <ScrollPadding />      
       <Header />
 
       <main className="page">
