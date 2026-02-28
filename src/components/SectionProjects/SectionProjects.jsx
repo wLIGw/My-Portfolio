@@ -2,7 +2,6 @@ import { useTranslation } from "react-i18next";
 import SubTitle from "../SubTitle/SubTitle";
 import ProjectsList from "../ProjectsList/ProjectsList";
 import "./style.scss";
-
 const SectionProjects = () => {
   const { t } = useTranslation();
 

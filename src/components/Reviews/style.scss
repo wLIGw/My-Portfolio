@@ -1,0 +1,132 @@
+.reviews-container {
+  column-count: 2;
+  column-gap: 20px;
+  
+
+  @media (max-width: 1000px) {
+    column-count: 1;
+  }
+}
+
+.review-card {
+  display: flex;
+  break-inside: avoid;
+  margin-bottom: 20px;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: var(--bgColor);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: translateY(-3px);
+  }
+
+  .review-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+
+  .review-avatar.placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 600;
+    font-size: 25px;
+  }
+
+  .review-content {
+    h3 {
+      margin: 0 0 0.5rem 0;
+      color: var(--Title);
+      font-family: "Bold";
+      font-size: 16px;
+    }
+
+    p {
+      margin: 0;
+      color: var(--textColor);
+      font-family: "Bold";
+      font-size: 14.4px;
+        }
+  }
+}
+
+
+/* ========================= */
+/*        REVEAL ANIMATION   */
+/* ========================= */
+
+/* начальное состояние */
+.reveal-up .review-card {
+  opacity: 0;
+  transform: translateY(60px);
+  transition:
+    opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: var(--delay);
+}
+
+/* активное состояние (когда useReveal добавил reveal-show) */
+.reveal-show .review-card {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+/* делаем карточку контейнером */
+.review-card {
+  position: relative;
+}
+
+.review-rating {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 0.9rem;
+  color: #f5b301;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 580px) {
+  .review-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 25px 20px;
+  }
+
+
+  .review-content {
+    width: 100%;
+
+    h3 {
+      margin-bottom: 8px;
+    }
+
+    p{
+      text-align: justify;
+    }
+  }
+
+  .review-rating {
+    position: static;
+    margin: 6px 0 12px 0;
+    order: 2;
+  }
+
+  .review-avatar {
+    order: 1;
+  }
+
+  .review-content {
+    order: 3;
+  }
+}

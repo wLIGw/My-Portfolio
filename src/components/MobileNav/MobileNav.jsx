@@ -15,6 +15,7 @@ const MobileNav = ({ isOpen, closeMenu }) => {
           <li><Link text={t("mobileNav.about")} to="/about" onClick={closeMenu} /></li>
           <li><Link text={t("mobileNav.skills")} to="/skills" onClick={closeMenu} /></li>
           <li><Link text={t("mobileNav.projects")} to="/projects" onClick={closeMenu} /></li>
+          <li><Link text={t("mobileNav.reviews")} to="/reviews" onClick={closeMenu} /></li>
           <li><Link text={t("mobileNav.contacts")} to="/contacts" onClick={closeMenu} /></li>
         </ul>
       </div>

@@ -9,14 +9,17 @@
     "about": "Обо мне",
     "skills": "Навыки",
     "projects": "Проекты",
-    "contacts": "Контакты"
+    "contacts": "Контакты",
+    "reviews": "Отзывы"
+
   },
    "mobileNav": {
     "home": "Главная",
     "about": "Обо мне",
     "skills": "Навыки",
     "projects": "Проекты",
-    "contacts": "Контакты"
+    "contacts": "Контакты",
+    "reviews": "Отзывы"
   },
    "contact": {
     "sendMessage": "Отправить сообщение",
@@ -43,6 +46,7 @@
   "learnMore": "Подробнее",
   "close": "Закрыть",
   "realProject": "РЕАЛЬНЫЙ ПРОЕКТ",
-    "downloadCV": "Скачать резюме"
+    "downloadCV": "Скачать резюме",
+    "reviews": "Отзывы"
 
 }

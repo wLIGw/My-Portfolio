@@ -10,7 +10,7 @@ import { useReveal } from "../../hooks/useReveal.js";
 import { ThemeContext } from "../../Context/ThemeContext.jsx";
 
 const Card = ({ project, index }) => {
-  const { t } = useTranslation(); // <-- подключаем i18next
+  const { t } = useTranslation(); 
   const ref = useReveal();
   const { theme } = useContext(ThemeContext);
 
@@ -30,7 +30,7 @@ const Card = ({ project, index }) => {
     }
   }, []);
 
-  // Всегда открывать модалку с начала
+  
   useEffect(() => {
     if (isModalOpen && modalRef.current) {
       modalRef.current.scrollTop = 0;
@@ -133,7 +133,7 @@ const Card = ({ project, index }) => {
             className={styles.closeBtn}
             onClick={() => setIsModalOpen(false)}
           >
-            {t("close")} {/* <-- перевод */}
+            {t("close")} 
           </button>
         </div>
       </div>

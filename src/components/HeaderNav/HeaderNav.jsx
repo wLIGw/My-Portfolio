@@ -21,6 +21,9 @@ const HeaderNav = ({ isOpen, closeMenu }) => {
           <Link text={t("nav.projects")} to="/projects" onClick={closeMenu} />
         </li>
         <li>
+          <Link text={t("nav.reviews")} to="/reviews" onClick={closeMenu} />
+        </li>
+        <li>
           <Link text={t("nav.contacts")} to="/contacts" onClick={closeMenu} />
         </li>
       </ul>

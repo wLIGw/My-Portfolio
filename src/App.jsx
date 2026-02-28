@@ -11,6 +11,7 @@ import About from "./pages/AboutPage";
 import Skills from "./pages/SkillsPage";
 import Projects from "./pages/ProjectsPage";
 import Contacts from "./pages/ContactsPage";
+import ReviewPage from "./pages/ReviewPage";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 import ScrollPadding from "./components/ScrollPadding/ScrollPadding";
 
@@ -28,6 +29,7 @@ function App() {
           <Route path="/skills" element={<Skills />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/contacts" element={<Contacts />} />
+          <Route path ="/reviews" element={<ReviewPage />} />
         </Routes>
       </main>
 
