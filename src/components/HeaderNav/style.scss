@@ -10,6 +10,10 @@
 .nav__list {
   display: flex;
   gap: 13px;
+
+  li{
+    white-space: nowrap;
+  }
 }
 
 @media (max-width: 1075px) {
