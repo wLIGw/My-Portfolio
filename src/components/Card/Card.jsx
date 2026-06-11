@@ -44,7 +44,7 @@ const Card = ({ project, index }) => {
       <div
         ref={ref}
         className={`${styles.card} reveal`}
-        style={{ transitionDelay: `${index * 0.15}s` }}
+        style={{ transitionDelay: `${Math.min(index * 0.05, 0.3)}s` }}
       >
         <h3 className={styles.cardTitle}>{project.title}</h3>
 

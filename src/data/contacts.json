@@ -28,6 +28,12 @@
     "label": "Github",
     "icon": "img/icons/github-white-icon.svg",
     "url": "https://github.com/wLIGw"
+    },
+    {
+    "type": "Facebook",
+    "label": "Facebook",
+    "icon": "img/icons/facebook-icon.svg",
+    "url": "https://www.facebook.com/profile.php?id=61590225003408&locale=ru_RU"
     }
     
     

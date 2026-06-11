@@ -11,8 +11,10 @@ const techWeights = {
   "JS": 3,
   "GULP": 4,
   "REACT": 5,
-  "VITE": 6,
-  "NODE JS": 7
+  "VITE": 5,
+  "TS": 6,
+  "MANTINE": 6,
+  "NODE JS": 7,
 };
 
 const REAL_PROJECT_BONUS = 1000;

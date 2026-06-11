@@ -70,6 +70,26 @@
     "real": true,
     "link": "https://wligw.github.io/Business-landing/",
     "img": "img/projects/09.png"
+  },
+  {
+    "title": "VPN Pro",
+    "desc": "Personal dashboard for Official VPN — a frontend application built from scratch using React + TypeScript. The interface covers the full user journey: from viewing subscription status and connection keys to selecting a plan, completing payment, and managing devices. All data is mock-driven, with the architecture fully prepared for real backend integration.\n\nThe project supports two subscription plans. VPN Basic — the essential plan for personal use: access to 4 server locations, up to 3 connected devices, and 10 GB/∞ traffic. VPN Pro — the advanced plan with no compromises: 6+ locations with new servers added regularly, up to 6 connected devices, LTE whitelist bypass, and ad-free YouTube.\n\nImplemented features:\n\n• Dashboard with subscription info, traffic usage, and status\n• Subscription renewal page with period selection (1 / 3 / 6 / 12 months)\n• Connected devices management (iOS, Android, Windows)\n• Step-by-step setup guide for each platform\n• Connection keys with node management\n• Pro upgrade modal with side-by-side plan comparison\n• Payment success screen\n• YooKassa payment page integration\n\nDevelopment highlights:\n\n• Fully custom UI with no ready-made templates\n• Component-based architecture with React and TypeScript\n• SCSS styling with Mantine UI\n• Mock data with a structure ready for backend connection\n• Fully responsive across desktop, tablet, and mobile\n• Vite-powered build for maximum development speed and optimized production output",
+    "tech": ["HTML", "SCSS", "JS", "REACT", "TS", "MANTINE", "VITE"],
+    "real": true,
+    "link": "https://wligw.github.io/VPN-Pro/",
+    "github": "https://github.com/wLIGw/VPN-Pro",
+    "img": "img/projects/11.png"
+  },
+  {
+    "title": "VPN Basic",
+    "desc": "Personal dashboard for Official VPN — a frontend application built from scratch using React + TypeScript. The interface covers the full user journey: from viewing subscription status and connection keys to selecting a plan, completing payment, and managing devices. All data is mock-driven, with the architecture fully prepared for real backend integration.\n\nThe project supports two subscription plans. VPN Basic — the essential plan for personal use: access to 4 server locations, up to 3 connected devices, and 10 GB/∞ traffic. VPN Pro — the advanced plan with no compromises: 6+ locations with new servers added regularly, up to 6 connected devices, LTE whitelist bypass, and ad-free YouTube.\n\nImplemented features:\n\n• Dashboard with subscription info, traffic usage, and status\n• Subscription renewal page with period selection (1 / 3 / 6 / 12 months)\n• Connected devices management (iOS, Android, Windows)\n• Step-by-step setup guide for each platform\n• Connection keys with node management\n• Pro upgrade modal with side-by-side plan comparison\n• Payment success screen\n• YooKassa payment page integration\n\nDevelopment highlights:\n\n• Fully custom UI with no ready-made templates\n• Component-based architecture with React and TypeScript\n• SCSS styling with Mantine UI\n• Mock data with a structure ready for backend connection\n• Fully responsive across desktop, tablet, and mobile\n• Vite-powered build for maximum development speed and optimized production output",
+    "tech": ["HTML", "SCSS", "JS", "REACT", "TS", "MANTINE", "VITE"],
+    "real": true,
+    "link": "https://wligw.github.io/VPN-Basic/",
+    "github": "https://github.com/wLIGw/VPN-Basic",
+    "img": "img/projects/10.png"
   }
+  
+  
   
 ]

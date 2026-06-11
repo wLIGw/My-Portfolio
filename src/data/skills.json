@@ -85,6 +85,16 @@
     "icon": "img/icons/make.svg",
     "name": "MAKE",
     "level": 40
+    },
+    {
+    "icon": "img/icons/typescript-icon.svg",
+    "name": "TS",
+    "level": 30
+    },
+    {
+    "icon": "img/icons/mantine-icon.svg",
+    "name": "MANTINE",
+    "level": 20
     }
 
 ]
